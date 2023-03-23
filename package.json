@@ -1,0 +1,24 @@
+{
+  "name": "dollar-monitor",
+  "version": "1.0.0",
+  "description": "Simple app to list tasks. You can:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejandroch1202/dollar-monitor.git"
+  },
+  "keywords": [
+    "javascript",
+    "html",
+    "css"
+  ],
+  "author": "Alejandro Chavez <alejandrochavez1202@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alejandroch1202/dollar-monitor/issues"
+  },
+  "homepage": "https://github.com/alejandroch1202/dollar-monitor#readme"
+}

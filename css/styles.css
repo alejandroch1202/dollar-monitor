@@ -1,0 +1,111 @@
+:root {
+  --light-gray: #eeeeee;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  background-color: rgb(60, 60, 60);
+}
+
+.container {
+  width: 85rem;
+  height: 50rem;
+  border-radius: 2rem;
+  background-color: var(--light-gray);
+  -webkit-box-shadow: -4px 4px 51px 6px rgba(33, 33, 34, 1);
+  -moz-box-shadow: -4px 4px 51px 6px rgba(33, 33, 34, 1);
+  box-shadow: -4px 4px 51px 6px rgba(33, 33, 34, 1);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+  border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+header nav {
+  display: flex;
+  gap: 1rem;
+}
+
+header nav a {
+  text-decoration: none;
+}
+
+header nav a img {
+  width: 3rem;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  gap: 8rem;
+}
+
+.bcv {
+  padding: 1.5rem;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 2rem;
+}
+.bcv img {
+  width: 20rem;
+  height: 20rem;
+}
+
+.monitor {
+  padding: 1.5rem;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 2rem;
+}
+
+.monitor img {
+  width: 20rem;
+  height: 20rem;
+  padding: 3rem;
+}
+
+footer {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--light-gray);
+  padding-top: 2rem;
+}
+
+footer img {
+  width: 2rem;
+}
