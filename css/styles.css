@@ -103,7 +103,7 @@ header nav a img {
   margin: 0;
   font-size: 1.8rem;
   padding: 1rem;
-  border: 1px solid black;
+  border: 1px solid rgb(200, 200, 200);
   border-radius: 1rem;
 }
 
