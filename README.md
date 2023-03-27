@@ -1,9 +1,15 @@
 # Monitor Dolar
 
-Simple app to list tasks. You can:
+Simple webpage to check the official (BCV) and the "unofficial" (Monitor) USD/VES rate.
 
-- Add tasks
-- Remove tasks
-- Mark as "done" by clicking in the task box
+- Minimalistic approach
+- No ADS
+- App made for practice and educational purposes
+
+## Build and deploy command
+
+```
+cd js && echo -e "const CORSSH_API_KEY = 'YOUR_CORSSH_API_KEY';\n\nexport {  CORSSH_API_KEY };" > config.js
+```
 
 Developed by Alejandro Chavez, 2023.

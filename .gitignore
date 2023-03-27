@@ -196,6 +196,10 @@ Thumbs.db:encryptable
 ehthumbs.db
 ehthumbs_vista.db
 
+#PROJECT
+
+config.js
+
 # Dump file
 *.stackdump
 
