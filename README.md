@@ -1,6 +1,6 @@
 # Monitor Dolar
 
-Simple webpage to check the official (BCV) and the "unofficial" (Monitor) USD/VES rate.
+Simple webpage to check the official ([BCV](https://www.bcv.org.ve/)) and the "unofficial" ([Monitor](https://monitordolarvenezuela.com/)) USD/VES rate.
 
 - Minimalistic approach
 - No ADS
