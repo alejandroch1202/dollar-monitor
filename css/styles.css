@@ -1,5 +1,6 @@
 :root {
   --light-gray: #eeeeee;
+  --dark-gray: #3c3c3c;
   --white: #ffffff;
   --black: #000000;
 }
@@ -21,7 +22,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Ubuntu", sans-serif;
-  background-color: rgb(60, 60, 60);
+  background-color: var(--dark-gray);
 }
 
 main {
