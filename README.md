@@ -2,11 +2,12 @@
 
 # Monitor Dolar
 
-Simple webpage to check the official ([BCV](https://www.bcv.org.ve/)) and the "unofficial" ([Monitor](https://monitordolarvenezuela.com/)) USD/VES rate.
+Simple webpage to check the official ([BCV](https://www.bcv.org.ve/)) and the "unofficial" ([Monitor](https://monitordolarvenezuela.com/)) USD/VES rate. Now it can be installed as a PWA app.
 
 - Minimalistic approach
 - No ADS
 - App made for practice and educational purposes
+- PWA support
 
 ## Build and deploy command
 
