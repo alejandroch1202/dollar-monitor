@@ -7,9 +7,9 @@ import { CORSSH_API_KEY } from "./config.js";
     .then((data) => data.text())
     .then((data) => {
       const index = data.search("/img/BCV.png");
-      const bcv = data.substring(index + 137 + 8, index + 142 + 8);
-      const bcvHour = data.substring(index + 168 + 12, index + 176 + 12);
-      const bcvDate = data.substring(index + 182 + 11, index + 192 + 11);
+      const bcv = data.substring(index + 137, index + 142);
+      const bcvHour = data.substring(index + 168, index + 176);
+      const bcvDate = data.substring(index + 181, index + 191);
 
       document.getElementById("bcv").innerHTML = `
         <h2>Banco Central de Venezuela</h2>
@@ -22,9 +22,9 @@ import { CORSSH_API_KEY } from "./config.js";
         `;
 
       const index2 = data.search("@EnParaleloVzla3");
-      const monitor = data.substring(index2 + 208 + 12, index2 + 213 + 12);
-      const monitorHour = data.substring(index2 + 238 + 16, index2 + 246 + 16);
-      const monitorDate = data.substring(index2 + 252 + 15, index2 + 262 + 15);
+      const monitor = data.substring(index2 + 208, index2 + 213);
+      const monitorHour = data.substring(index2 + 238, index2 + 246);
+      const monitorDate = data.substring(index2 + 251, index2 + 261);
 
       document.getElementById("monitor").innerHTML = `
         <h2>Monitor Dólar</h2>
