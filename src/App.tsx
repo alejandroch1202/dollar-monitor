@@ -60,7 +60,7 @@ export default function App (): JSX.Element {
       </div>
       <div className='text-gray-300 flex gap-1 my-0 justify-center'>Made with <img className='w-4' src={heart} alt='heart'/> by <a className='text-indigo-400' href='https://alejandroch.com'>alejandroch.com</a></div>
       <div className='text-gray-300 flex gap-1 my-0 justify-center'>Sources
-        <a className='text-indigo-400' href='https://www.bcv.org.ve/'>bcv.org</a> &
+        <a className='text-indigo-400' href='https://www.instagram.com/bcv.org.ve/'>@bcv.org.ve</a> &
         <a className='text-indigo-400' href='https://www.instagram.com/enparalelovzla_oficial/'>@enparalelovzla_oficial</a></div>
     </div>
   )

@@ -7,6 +7,18 @@ export interface fetchResult {
   date: string
 }
 
+const reverseString = (str: string): string => {
+  let reversedString: string = ''
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversedString += str[i]
+  }
+  return reversedString
+}
+
+const dateFormatter = (date: string): string => {
+  return date.substring(8, 10) + '/' + date.substring(5, 7) + '/' + date.substring(0, 4)
+}
+
 export const fetchBcv = async (): Promise<fetchResult | false> => {
   try {
     const options = {
@@ -20,7 +32,7 @@ export const fetchBcv = async (): Promise<fetchResult | false> => {
     const index = result.search('/sites/default/files/dollar')
     const price = result.substring(index + 139, index + 144)
     const date = result.substring(index + 327, index + 337)
-    return { price, date }
+    return { price, date: dateFormatter(date) }
   } catch (error) {
     console.log(error)
     return false
@@ -37,10 +49,11 @@ export const fetchMdv = async (): Promise<fetchResult | false> => {
     }
     const response = await fetch(API_URL_MDV, options)
     const result = await response.text()
-    const index = result.search('><b>🗓</b></i>')
-    const price = result.substring(index + 254, index + 259)
-    const date = result.substring(index + 15, index + 25)
-    return { price, date }
+    const reversed = reverseString(result)
+    const index = reversed.search('>i/<>b/<\uDDD3\uD83D>b<>')
+    const price = reversed.substring(index - 239, index - 245)
+    const date = reversed.substring(index - 0, index - 11)
+    return { price: reverseString(price), date: reverseString(date) }
   } catch (error) {
     console.log(error)
     return false
