@@ -1,17 +1,27 @@
-<p align="right"><a href="https://grida.co" target="_blank"><img src="https://s3.us-west-1.amazonaws.com/brand.grida.co/badges-for-github/sponsored-by-grida-oss-program.png" width="200" alt="Sponsored by Grida"></a></p>
+# React + TypeScript + Vite
 
-# Monitor Dolar
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Simple webpage to check the official ([BCV](https://www.bcv.org.ve/)) and the "unofficial" ([Monitor](https://monitordolarvenezuela.com/)) USD/VES rate. Now it can be installed as a PWA app.
+Currently, two official plugins are available:
 
-- Minimalistic approach
-- No ADS
-- App made for practice and educational purposes
-- PWA support
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Build and deploy command
+## Expanding the ESLint configuration
 
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+
+- Configure the top-level `parserOptions` property like this:
+
+```js
+   parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+   },
 ```
-cd js && echo -e "const CORSSH_API_KEY = 'YOUR_CORSSH_API_KEY';\n\nexport {  CORSSH_API_KEY };" > config.js
-```
-Developed by Alejandro Chavez, 2023.
+
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list

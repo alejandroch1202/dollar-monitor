@@ -1,5 +1,30 @@
-# Created by https://www.toptal.com/developers/gitignore/api/node,windows,linux,macos
-# Edit at https://www.toptal.com/developers/gitignore?templates=node,windows,linux,macos
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Created by https://www.toptal.com/developers/gitignore/api/node,linux,windows,macos
+# Edit at https://www.toptal.com/developers/gitignore?templates=node,linux,windows,macos
 
 ### Linux ###
 *~
@@ -179,7 +204,7 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-
+package-lock.json
 ### Node Patch ###
 # Serverless Webpack directories
 .webpack/
@@ -195,10 +220,6 @@ Thumbs.db
 Thumbs.db:encryptable
 ehthumbs.db
 ehthumbs_vista.db
-
-#PROJECT
-
-config.js
 
 # Dump file
 *.stackdump
@@ -219,4 +240,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/node,windows,linux,macos
+# End of https://www.toptal.com/developers/gitignore/api/node,linux,windows,macos

@@ -1,57 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="manifest" href="manifest.json" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="shortcut icon" href="./assets/dollar.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
     <title>Monitor Dolar</title>
   </head>
   <body>
-    <main>
-      <div class="container">
-        <header>
-          <h2>Monitor Dolar</h2>
-
-          <nav>
-            <a target="_blank" href="https://alejandroch1202.github.io/">
-              <img src="./assets/web.svg" alt="website" />
-            </a>
-            <a target="_blank" href="https://github.com/alejandroch1202">
-              <img src="./assets/github.svg" alt="github" />
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/in/alejandroch/">
-              <img src="./assets/linkedin.svg" alt="linkedin" />
-            </a>
-            <a target="_blank" href="https://twitter.com/alejandroch1202">
-              <img src="./assets/twitter.svg" alt="twitter" />
-            </a>
-          </nav>
-        </header>
-
-        <div class="app">
-          <div class="bcv" id="bcv">Waiting...</div>
-
-          <div class="monitor" id="monitor">Waiting...</div>
-        </div>
-      </div>
-
-      <footer>
-        Made with
-        <img src="./assets/heart-dark.svg" alt="love" />
-        by Alejandro Chavez
-      </footer>
-    </main>
-
-    <script src="./js/main.js" type="module"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
