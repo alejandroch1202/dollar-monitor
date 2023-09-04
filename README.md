@@ -1,27 +1,18 @@
-# React + TypeScript + Vite
+<div align="right">
+   <a href="https://github.com/standard/standard" target="_blank"><img src="https://cdn.rawgit.com/standard/standard/master/badge.svg" width="200" alt="Using standard.js"></a>
+   &nbsp;
+   <a href="https://grida.co" target="_blank"><img src="https://s3.us-west-1.amazonaws.com/brand.grida.co/badges-for-github/sponsored-by-grida-oss-program.png" width="200" alt="Sponsored by Grida"></a>
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Monitor Dolar
 
-Currently, two official plugins are available:
+Simple webpage to check the official ([BCV](https://www.bcv.org.ve/)) and the "unofficial" ([Monitor](https://www.instagram.com/enparalelovzla_oficial/)) USD/VES rate.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- No ADS
+- Using ts-standard
+- Minimalistic approach
+- PWA support in progress
+- App made for practice and educational purposes
+- Migrated from JavaScript Vanilla to React + TypeScript + TailwindCSS + Vite
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Developed by [Alejandro Chavez](https://alejandroch.com/) and sponsored by [Grida](https://grida.co/), 2023.
