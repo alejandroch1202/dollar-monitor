@@ -11,7 +11,7 @@ const manifestForPlugIn: Partial<VitePWAOptions> = {
     start_url: '/',
     scope:'/',
     display: 'standalone',
-    background_color: '#111827',
+    background_color: '#000000',
     theme_color: '#1f2937',
     orientation: 'portrait-primary',
     description: 'Simple app to monitor the USD/VES rate',
