@@ -6,12 +6,12 @@
 
 # Monitor Dolar
 
-Simple webpage to check the official ([BCV](https://www.bcv.org.ve/)) and the "unofficial" ([Monitor](https://www.instagram.com/enparalelovzla_oficial/)) USD/VES rate.
+Simple webpage to check the official ([BCV](https://www.bcv.org.ve/)) and the "unofficial" ([Monitor](https://www.instagram.com/enparalelovzla_oficial/)) USD/VES rate. Now it can be installed as a PWA app.
 
 - No ADS
+- PWA support
 - Using ts-standard
 - Minimalistic approach
-- PWA support in progress
 - App made for practice and educational purposes
 - Migrated from JavaScript Vanilla to React + TypeScript + TailwindCSS + Vite
 
