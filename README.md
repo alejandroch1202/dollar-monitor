@@ -4,7 +4,7 @@
    <a href="https://grida.co" target="_blank"><img src="https://s3.us-west-1.amazonaws.com/brand.grida.co/badges-for-github/sponsored-by-grida-oss-program.png" width="200" alt="Sponsored by Grida"></a>
 </div>
 
-# Monitor Dolar
+# 💲 Monitor Dolar
 
 Simple webpage to check the official ([BCV](https://www.bcv.org.ve/)) and the "unofficial" ([Monitor](https://www.instagram.com/enparalelovzla_oficial/)) USD/VES rate. Now it can be installed as a PWA app.
 
