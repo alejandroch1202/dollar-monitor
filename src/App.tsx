@@ -33,9 +33,16 @@ export default function App (): JSX.Element {
         <div className='space-y-10'>
           <div className='space-y-5 sm:space-y-4 w-full'>
             <h2 className='text-3xl font-extrabold text-white tracking-tight sm:text-4xl text-center'>Monitor Dólar</h2>
-            <p className='text-xl text-gray-300 text-center'>Ahora puedes instalarla como una PWA. Botón para el Dark Mode en progreso.</p>
+            <p className='text-xl text-gray-300 text-center'>Ahora puedes instalarla como una PWA.</p>
           </div>
           <ul role='list' className='space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-3 lg:gap-8'>
+            { mdvData !== false
+              ? <Card title='Monitor Dólar Venezuela'
+                image={mdvImg}
+                price={mdvData.price}
+                date={mdvData.date} />
+              : <Wait /> }
+
             { bcvData !== false
               ? <Card
                 title='Banco Central de Venezuela'
@@ -43,16 +50,11 @@ export default function App (): JSX.Element {
                 price={bcvData.price}
                 date={bcvData.date} />
               : <Wait /> }
-            { mdvData !== false
-              ? <Card title='Monitor Dólar Venezuela'
-                image={mdvImg}
-                price={mdvData.price}
-                date={mdvData.date} />
-              : <Wait /> }
+
             <Card
               title='Dólar Today'
               image={dtvImg}
-              price={'00.00'}
+              price={'0.00'}
               date={'Soon'}
             />
           </ul>

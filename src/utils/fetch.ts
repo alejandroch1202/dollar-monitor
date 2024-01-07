@@ -16,7 +16,13 @@ const reverseString = (str: string): string => {
 }
 
 const dateFormatter = (date: string): string => {
-  return date.substring(8, 10) + '/' + date.substring(5, 7) + '/' + date.substring(0, 4)
+  return (
+    date.substring(8, 10) +
+    '/' +
+    date.substring(5, 7) +
+    '/' +
+    date.substring(0, 4)
+  )
 }
 
 export const fetchBcv = async (): Promise<fetchResult | false> => {
@@ -29,10 +35,14 @@ export const fetchBcv = async (): Promise<fetchResult | false> => {
     }
     const response = await fetch(API_URL_BCV, options)
     const result = await response.text()
-    const index = result.search('/sites/default/files/dollar')
-    const price = result.substring(index + 139, index + 144)
-    const date = result.substring(index + 327, index + 337)
-    return { price, date: dateFormatter(date) }
+    const reversed = reverseString(result)
+    const index = reversed.search(reverseString('Bs./US&#036;.: <i class'))
+    const price = reversed.substring(index - 101, index - 106)
+    const date = reversed.substring(index - 1502, index - 1512)
+    return {
+      price: reverseString(price),
+      date: dateFormatter(reverseString(date))
+    }
   } catch (error) {
     console.log(error)
     return false
