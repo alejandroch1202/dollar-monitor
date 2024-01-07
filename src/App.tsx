@@ -14,10 +14,10 @@ export default function App (): JSX.Element {
 
   useEffect(() => {
     async function fetchData () {
-      const bcvData = await fetchBcv()
-      setBcvData(bcvData)
       const mdvData = await fetchMdv()
       setMdvData(mdvData)
+      const bcvData = await fetchBcv()
+      setBcvData(bcvData)
     }
 
     try {
