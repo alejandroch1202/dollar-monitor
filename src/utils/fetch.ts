@@ -36,9 +36,9 @@ export const fetchBcv = async (): Promise<fetchResult | false> => {
     const response = await fetch(API_URL_BCV, options)
     const result = await response.text()
     const reversed = reverseString(result)
-    const index = reversed.search(reverseString('Bs./US&#036;.: <i class'))
-    const price = reversed.substring(index - 101, index - 106)
-    const date = reversed.substring(index - 1502, index - 1512)
+    const index = reversed.search(reverseString('</b></i>'))
+    const price = reversed.substring(index, index - 5)
+    const date = reversed.substring(index - 1394, index - 1404)
     return {
       price: reverseString(price),
       date: dateFormatter(reverseString(date))
